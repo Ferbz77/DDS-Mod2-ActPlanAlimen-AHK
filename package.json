@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/Ferbz77/DDS-Mod2-ActPlanAlimen-AHK.git"
   },
   "author": "Fernanda Baez",

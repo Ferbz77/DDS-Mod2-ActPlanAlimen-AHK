@@ -1,0 +1,22 @@
+{
+  "name": "actplanalimen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/Ferbz77/DDS-Mod2-ActPlanAlimen-AHK.git"
+  },
+  "author": "Fernanda Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ferbz77/DDS-Mod2-ActPlanAlimen-AHK/issues"
+  },
+  "homepage": "https://github.com/Ferbz77/DDS-Mod2-ActPlanAlimen-AHK#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

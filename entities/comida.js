@@ -1,7 +1,7 @@
 export class Comida{
-    descripcion;
-    composicion;
     tipo;
+    descripcion;
+    composicion = {};
     ingredientes;
 
     agregarComidas(){
@@ -12,5 +12,15 @@ export class Comida{
     tieneProteinas(){
         return this.comidas.filter(comp => comp.composicion=="proteinas").length;
     }
+    tieneVegetales(){
+        return this.comidas.filter(comp => comp.composicion =="vegetales").length;
+    }
 
+    esColacion(){
+        return this.tipo == "colacion";
+    }
+    
+    esBebida(){
+        return this.tipo == "bebida";
+    }
 }

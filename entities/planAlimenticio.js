@@ -16,6 +16,14 @@ export class PlanAlimenticio{
         this.profesional = profesional;
     }
 
+    agregarComidas(comidas){
+        this.comidas.push(comidas);
+    }
+
+    agregarObjetivos(objetivos){
+        this.objetivos.push(objetivos);
+    }
+
     //Permitir saber la cantidad total de comidas de un plan alimenticio.
     cantComidasDelPlan(){
         return this.comidas.length;
@@ -59,9 +67,9 @@ export class PlanAlimenticio{
          sumaPorcentajesVegetales += comida.tieneVegetales();
         })
             
-        const promedioPorcentajeProteinas = sumaPorcentajesProteinas / this.cantDeComidasAC();
+        const promedioPorcentajeVegetales = sumaPorcentajesVegetales/ this.cantDeComidasAC();
 
-        return promedioPorcentajeProteinas >= 35
+        return promedioPorcentajeVegetales >= 35
     }
 
     //Permitir saber la cantidad total de colaciones del plan alimenticio.

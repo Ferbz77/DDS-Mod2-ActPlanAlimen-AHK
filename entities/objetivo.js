@@ -1,4 +1,7 @@
 export class Objetivo{
-    descripcion;
-    estaCumplido;
+   
+    constructor(descripcion, estaCumplido = false) {
+       this.descripcion = descripcion;
+       this.estaCumplido = estaCumplido;
+       }
 }
